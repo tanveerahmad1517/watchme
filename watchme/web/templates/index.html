@@ -46,18 +46,32 @@
         </div>
 
         <div class="card">
-                <div class="card-header" role="tab" id="headingThree" align="center">
-                    <h5 class="mb-0">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Host
-                        </a>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                    <div class="card-block" align="center">
-                        {{ data.REMOTE_ADDR }} <br> This is the address you connected from. It should be your proxy server's address if you're using one, otherwise just your good ol' public-facing IP. 
-                    </div>
+            <div class="card-header" role="tab" id="headingThree" align="center">
+                <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Host
+                    </a>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="card-block" align="center">
+                    {{ data.REMOTE_ADDR }} <br> This is the address you connected from. It should be your proxy server's address if you're using one, otherwise just your good ol' public-facing IP. 
                 </div>
             </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header" role="tab" id="headingFour" align="center">
+                <h5 class="mb-0">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Location
+                    </a>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div id="location-text" class="card-block" align="center">
+                </div>
+            </div>
+        </div>
     </div>
 {% endblock %}
