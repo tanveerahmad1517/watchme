@@ -1,3 +1,5 @@
+// This simple code lets me see where you are (roughly)
+
 function geocodeLatLng(geocoder, lat, lon) {
     let latlng = {lat: parseFloat(lat), lng: parseFloat(lon)};
     
