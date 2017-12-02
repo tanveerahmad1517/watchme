@@ -1,0 +1,1 @@
+web: python3 watchme/manage.py makemigrations; python3 watchme/manage.py migrate; python3 watchme/manage.py runserver 0.0.0.0:$PORT
