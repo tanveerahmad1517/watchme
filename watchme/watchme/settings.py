@@ -31,7 +31,7 @@ if 'DEBUG' in os.environ:
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'w4tchme.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'w4tchme.herokuapp.com', 'lookwhoswatching.com']
 
 # Application definition
 
@@ -119,6 +119,7 @@ USE_L10N = True
 
 USE_TZ = True
 
+SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
