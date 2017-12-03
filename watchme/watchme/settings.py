@@ -31,7 +31,7 @@ if 'DEBUG' in os.environ:
 else:
     DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'w4tchme.herokuapp.com', 'www.lookwhoswatching.com', 'lookwhoswatching.com'']
+ALLOWED_HOSTS = ['127.0.0.1', 'w4tchme.herokuapp.com', 'www.lookwhoswatching.com', 'lookwhoswatching.com']
 
 # Application definition
 
