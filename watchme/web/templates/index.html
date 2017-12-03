@@ -8,8 +8,13 @@
 {% block body %}
     <div class="jumbotron jumbotron-fluid">
         <div class="container" align="center">
-          <h1 class="display-3">I see you</h1>
-          <p class="lead">Click the buttons below to see what I see...</p>
+            {% if new_guest %}
+                <h1 class="display-3">I see you</h1>
+                <p class="lead">Click the buttons below to see what I see...</p>
+            {% else %}
+                <h1 class="display-3">Welcome back!</h1>
+                <p class="lead">I last saw you on {{ prev_visit }}</p>
+            {% endif %}
         </div>
     </div>
 
@@ -49,7 +54,7 @@
             <div class="card-header" role="tab" id="headingThree" align="center">
                 <h5 class="mb-0">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Host
+                        IP
                     </a>
                 </h5>
             </div>
